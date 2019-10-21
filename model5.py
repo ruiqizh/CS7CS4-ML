@@ -21,6 +21,7 @@ def filter_zero(df):
             df['isValuable'] = np.where(df[i] == '0', 'No' ,df['isValuable'])
     return df
 
+# Importing the dataset
 df = pd.read_csv('tcdml1920-income-ind/tcd ml 2019-20 income prediction training (with labels).csv')
 df = fill_null(df)
 
